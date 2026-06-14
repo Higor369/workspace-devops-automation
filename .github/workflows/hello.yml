@@ -1,0 +1,13 @@
+name: hello github
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir mensagem no log
+        run: echo "Github actions funcionando"
